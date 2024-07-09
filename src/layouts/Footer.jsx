@@ -10,11 +10,11 @@ export default function Footer() {
   return (
     <div className="bg-[#262262]">
       <div className="cc-container">
-      <div className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col max-sm:flex-col justify-center pt-7 mb-4 items-center">
+      <div className="flex justify-center pt-7 mb-4 items-center">
         <h3 className="text-white text-xl">Back to top</h3>
         <img src={arrowup} alt={arrowup}/>
       </div>
-        <div className="flex justify-between">
+        <div className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col-reverse max-sm:flex-col-reverse justify-between">
           <div>
            <h3 className="text-white text-xl">Office Address</h3>
            <div>
@@ -22,8 +22,8 @@ export default function Footer() {
               <img src={locationicon} alt={locationicon} className="text-sm h-8"/>
               <p className="text-white text-xl">39 Darlington street, Mokola Ibadan</p>
             </div>
-            <div className="flex gap-x-6 items-center">
-             <div className="flex gap-x-2.5 items-center">
+            <div className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col max-sm:flex-col gap-x-6 xl:items-center lg:items-center md:items-center">
+             <div className="flex gap-x-2.5 items-center max-sm:mb-4 sm:mb-4">
               <img src={whatsappicon} alt={whatsappicon} className="text-sm h-7"/>
               <p className="text-white text-xl">+2348103307818</p>
              </div> 

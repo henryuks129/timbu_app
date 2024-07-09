@@ -1,4 +1,5 @@
 import {React, useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import BussinessStationaries from '../pages/BusinessStationaries'
 import BusinessCards from '../pages/BusinessCards'
 import ProductStickers from '../pages/ProductStickers'
@@ -46,7 +47,12 @@ export default function Home() {
         <section><ExerciseBooks/></section>
         <section><OtherItems/></section>
         <div className='mt-5 pb-8'>
-          <p className='text-custom-size text-[#FF8000]'>Looking for something else or special customization for any of the products or fill this<span className='text-custom-size text-[#262262]'> form</span></p>
+          <p className='text-custom-size text-[#FF8000] hidden md:block'>Looking for something else or special customization for any of the products or fill this<span className='text-custom-size text-[#262262]'> form</span></p>
+        </div>
+        <div className="max-sm:pb-4 sm:pb-4">
+          <Link path={"/"} className="flex justify-end">
+          <p className="text-[#262262] text-xl block md:hidden">See more</p>
+          </Link>
         </div>
       </div>
     </div>

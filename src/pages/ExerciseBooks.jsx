@@ -15,7 +15,7 @@ export default function ExerciseBooks() {
   return (
       <div className="my-8">
       <div>
-        <h1 className="text-3xl text-[#FF8000]">Exercise books in realms</h1>
+        <h1 className="xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl max-sm:text-xl font-bold text-[#FF8000]">Exercise books in realms</h1>
         <div className='grid max-sm:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-14'>
           {ChartDB4.map((product) => {
             const {id, name, image, sign, price} = product
